@@ -10,10 +10,12 @@ namespace Info
         {
             //turn on stopwatch
             Stopwatch stopwatch = new Stopwatch();
-            stopwatch.Start();
+            
             //enter text
             Console.WriteLine("Wpisz text");
             string text = Console.ReadLine();
+
+            stopwatch.Start();
             
             //array text and array to lower declaration
             char[] arr = text.ToCharArray();
@@ -26,10 +28,9 @@ namespace Info
             //checking if there are spaces in text or lower case chars;
             for (int i =0;i<text.Length; i++)
             {
-                if (text[i] == ' ')
+                if (text[i] == ' ')//look for spaces
                     counter++;
-                else{
-                    if()
+                else{                         // if char is not a space then look for small and big letters
                     if (arr[i] == arrDown[i])
                     {
                         Down++;
